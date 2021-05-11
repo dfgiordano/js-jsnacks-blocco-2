@@ -72,4 +72,22 @@ console.log(nuovoArray);
 
 /* Snack 3  */
 /* Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).   */
+function MiaFunzione (arrayNuovo,5,10) {
+    return arrayNuovo;
+}
+console.log(arrayNuovo);
+
+// creo una funzione, 3argomenti array,a < b 
+// ritorna un array
+var arrayNuovo = [];
+function MiaFunzione (array,a,b) {
+    if (a < b) {
+        for (i = a; i < b; i++) {
+            arrayNuovo.push(i);
+        }
+    }
+    return arrayNuovo;
+};
+
+
 /* La funzione restituirà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.  */
