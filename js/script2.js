@@ -5,18 +5,18 @@
 var arraySquadre = [
     {
         nome : "Juventus",
-        puntiFatti : getRandomNumber(1,100),
-        falliSubiti : getRandomNumber(1,50)
+        puntiFatti : 0,
+        falliSubiti : 0
     },
     {
         nome : "Inter",
-        puntiFatti : getRandomNumber(1,100),
-        falliSubiti : getRandomNumber(1,50)
+        puntiFatti : 0,
+        falliSubiti : 0
     },
     {
         nome : "Milan",
-        puntiFatti : getRandomNumber(1,100),
-        falliSubiti : getRandomNumber(1,50)
+        puntiFatti : 0,
+        falliSubiti : 0
     }
 ];
 console.log(arraySquadre);
@@ -29,8 +29,10 @@ function getRandomNumber(min, max) {
 var nuovoArray = [];
 
 for (var i = 0; i < arraySquadre.length; i++) {
-    var nuoviDati = arraySquadre[i];
-    nuovoArray.push("Punti fatti : " + nuoviDati.puntiFatti + ", Falli subiti : " + nuoviDati.falliSubiti);
+    var squadra = arraySquadre[i];
+    squadra.puntiFatti = getRandomNumber(1,100);
+    squadra.falliSubiti = getRandomNumber(1,50);
+    nuovoArray.push("Nome : " + squadra.nome + ", Falli subiti : " + squadra.falliSubiti);
     
 }
 console.log(nuovoArray);
